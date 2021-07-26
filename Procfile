@@ -1,0 +1,1 @@
+web: gunicorn ipakr_web.wsgi --log-file -
