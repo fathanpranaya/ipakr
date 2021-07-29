@@ -94,7 +94,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ipakr_web',
-        'USER': 'root',
+        'USER': 'fathan',
         'PASSWORD': 'idea0999!',
         'HOST': 'localhost',
         'PORT': '3306',
