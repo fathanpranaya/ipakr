@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}DjangoX{% endblock title %}</title>
+    <title>{% block title %}IPA Korea{% endblock title %}</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <meta name="author" content=""/>
@@ -50,9 +50,6 @@
             <div class="col-lg-12 menu">
                 <!-- End Logo container-->
 
-                <div>
-                    <a class="menu-logo" href="">IPA Korea</a>
-                </div>
 
                 <div class="menu-extras">
                     <div class="menu-item">
@@ -70,21 +67,25 @@
 
                 <div id="navigation">
                     <!-- Navigation Menu-->
+                    <img style="height:50px; margin-top:10px" src="{% static 'glamium/images/ipa-logo.png' %}" alt="">
                     <ul class="navigation-menu">
                         <li class="has-submenu active">
                             <a href="#home">Home</a>
                         </li>
                         <li class="has-submenu">
-                            <a href="#about">About</a>
+                            <a href="#vision">Vision</a>
                         </li>
                         <li class="has-submenu">
                             <a href="#team">Team</a>
                         </li>
+                        {#                        <li class="has-submenu">#}
+                        {#                            <a href="#blog">Blog</a>#}
+                        {#                        </li>#}
+                        {#                        <li class="has-submenu">#}
+                        {#                            <a href="#contact">Contact</a>#}
+                        {#                        </li>#}
                         <li class="has-submenu">
-                            <a href="#blog">Blog</a>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#contact">Contact</a>
+                            <a href="#about">About</a>
                         </li>
                     </ul>
                 </div>
@@ -105,16 +106,30 @@
             <div class="col-lg-4">
                 <div class="footer-box">
                     <div class="footer-title">
-                        <h5 class="text-uppercase">IPA Korea</h5>
+                        <img style="height:100px; margin-left: -25px; margin-top:-20px"
+                             src="{% static 'glamium/images/ipa-logo-white.png' %}"
+                             alt="">
+
                     </div>
 
-                    <p class="footer-info mt-5">Aenean mattis fringilla varius in sapien eleifend bibendum commodo purus
-                        blandit.</p>
+                    <p class="footer-info mt-5" style="margin-top:25px!important;">
+                        216 Hwangsaeul-ro Bundang-gu,
+                        Seongnam-si, Gyeonggi-do 13595, Korea
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="footer-box">
+                    <div class="footer-title">
+                        <h5 class="text-uppercase">CONTACT US</h5>
+                    </div>
 
                     <div class="mt-4">
-                        <p class="footer-info mb-2"><i class="mdi mdi-phone pr-3"></i>123-456-789 , 609-698-6517</p>
+                        <p class="footer-info mb-2"><i class="mdi mdi-phone pr-3"></i>+82-10-3169-0591</p>
                         <p class="footer-info mb-2"><i class="mdi mdi-email pr-3"></i>ipakr.team@gmail.com</p>
-                        <p class="footer-info mb-2"><i class="mdi mdi-web pr-3"></i>ipakr.org</p>
+                        <p class="footer-info mb-2"><i class="mdi mdi-web pr-3"></i>www.ipakr.org</p>
                     </div>
 
                 </div>
@@ -131,18 +146,18 @@
 
                             <div class="col-lg-4">
                                 <div class="client-images">
-                                    <img src="{% static 'glamium/images/client/img-1.png' %}" alt="" class="img-fluid">
+                                    {#                                    <img src="{% static 'glamium/images/client/img-1.png' %}" alt="" class="img-fluid">#}
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="client-images">
-                                    <img src="{% static 'glamium/images/client/img-2.png' %}" alt="" class="img-fluid">
+                                    {#                                    <img src="{% static 'glamium/images/client/img-2.png' %}" alt="" class="img-fluid">#}
                                 </div>
                             </div>
 
                             <div class="col-lg-4">
                                 <div class="client-images">
-                                    <img src="{% static 'glamium/images/client/img-3.png' %}" alt="" class="img-fluid">
+                                    {#                                    <img src="{% static 'glamium/images/client/img-3.png' %}" alt="" class="img-fluid">#}
                                 </div>
                             </div>
 
@@ -150,23 +165,6 @@
 
                         <div class="row mt-4">
 
-                            <div class="col-lg-4">
-                                <div class="client-images">
-                                    <img src="{% static 'glamium/images/client/img-4.png' %}" alt="" class="img-fluid">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="client-images">
-                                    <img src="{% static 'glamium/images/client/img-5.png' %}" alt="" class="img-fluid">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="client-images">
-                                    <img src="{% static 'glamium/images/client/img-6.png' %}" alt="" class="img-fluid">
-                                </div>
-                            </div>
 
                         </div>
 
@@ -175,24 +173,6 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
-                <div class="footer-box">
-                    <div class="footer-title">
-                        <h5 class="text-uppercase">Newsletter</h5>
-                    </div>
-
-                    <p class="footer-info mt-5">Maecenas purus lectus feugiat preti vehicula Maecenas volutpat amet
-                        tortor facilisis lecus efficitur lacus ornare.</p>
-
-                    <div class="newsletter mt-5">
-                        <form action="#">
-                            <input placeholder="Your Email Address" type="text">
-                            <button type="submit" class="btn btn-custom"><i class="mdi mdi-chevron-right"></i></button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
 
         </div>
     </div>
@@ -209,7 +189,7 @@
                     <p class="copy-rights text-light mb-0">2021 © IPA Korea</p>
                 </div>
 
-                <div class="float-right pull-none">
+                <div class="float-right pull-none" style="display: none">
                     <ul class="list-inline social-icon mb-0">
                         <li class="list-inline-item"><a href=""><i class="mdi mdi-twitter"></i></a></li>
                         <li class="list-inline-item"><a href=""><i class="mdi mdi-dribbble"></i></a></li>
